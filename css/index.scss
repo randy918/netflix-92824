@@ -1,21 +1,98 @@
-@font-face { 
-    font-family: "Bold"; 
-    src: url("../fonts/Acorn-Bold.woff"); 
-  }
-@font-face { 
-    font-family: "Light"; 
-    src: url("../fonts/Acorn-Light.woff"); 
-  }
+//>  ████████████████████████████████████  ROOT
+
+@font-face {
+    font-family: "Bold";
+    src: url("../fonts/FiraSansCondensed-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "Light";
+    src: url("../fonts/FiraSansCondensed-Light.otf");
+}
+
+:root {
+    --text-color: #fff;
+    --bg-color: #1b1f24;
+    --bg-color2: #22282;
+    --main-color: #13bbff;
+    --main-color2: #c3cad5;
+    
+    --h1-font: 4.5rem;
+    --h2-font: 2.9rem;
+    --p-font: 1rem;
+    
+    }
 
 * {
-    background: red;
-    block: inline-block;
-    font-family: "Light"; 
-    background: red;
-    color: black;
-   
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+
+    list-style: none;
+
+    font-family: "Light";
     text-align: center;
-   
+    text-decoration: none;
+}
+
+//>  ████████████████████████████████████  BODY
+
+body {
+
+color: var(--text-color);
+background: var(--bg-color);
 
 }
 
+//>  ████████████████████████████████████  A
+
+a, a:hover, a:visited, a:active {
+    color: inherit;
+    text-decoration: none;
+   }
+   
+//>  ████████████████████████████████████  FONT AWESOME   
+
+.fa-paintbrush {
+
+    color: red;
+    
+    }
+
+//>  ████████████████████████████████████  HEADER   
+
+header {
+position: fixed;
+width: 100%;
+top: 0;
+right: 0;
+padding: 40px 16%;
+z-index: 1000;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.logo {
+font-size: 2rem;
+font-family: "Bold";
+}
+
+.navlist {
+display: flex;
+}
+
+.navlist a {
+font-size: var(--p-font);
+color: red;
+margin-left: 3vw;
+transition: all .50s ease;
+}
+
+.navlist a:hover {
+
+color: white;
+
+}
