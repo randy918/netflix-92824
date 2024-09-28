@@ -15,6 +15,7 @@
   --h1-font: 4.5rem;
   --h2-font: 2.9rem;
   --p-font: 1rem;
+  --border: red;
 }
 
 * {
@@ -52,15 +53,18 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  outline: 1px solid var(--border);
 }
 
 .logo {
   font-size: 2rem;
   font-family: "Bold";
+  outline: 1px solid var(--border);
 }
 
 .navlist {
   display: flex;
+  outline: 1px solid var(--border);
 }
 
 .navlist a {
@@ -68,6 +72,7 @@ header {
   color: red;
   margin-left: 3vw;
   transition: all 0.5s ease;
+  outline: 1px solid var(--border);
 }
 
 .navlist a:hover {
