@@ -44,37 +44,63 @@ a, a:hover, a:visited, a:active {
 }
 
 header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  right: 0;
-  padding: 40px 16%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 4fr;
+  max-width: 960px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 0 auto;
+  margin-top: 40px;
   z-index: 1000;
-  display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   outline: 1px solid var(--border);
 }
 
-.logo {
-  font-size: 2rem;
-  font-family: "Bold";
+.header__logo {
+  grid-area: 1/1/3/2;
+  outline: 1px solid var(--border);
+  width: 100%;
+  max-width: 320px;
   outline: 1px solid var(--border);
 }
 
-.navlist {
+.header__nav {
+  grid-area: 1/2/2/3;
+  align-items: center;
+  justify-content: center;
   display: flex;
   outline: 1px solid var(--border);
 }
 
-.navlist a {
-  font-size: var(--p-font);
+.header__nav a {
+  font-size: clamp(16px, 2vw, 18px);
+  font-family: "Bold";
   color: red;
-  margin-left: 3vw;
+  margin-left: clamp(10px, 1.5vw, 20px);
+  margin-right: clamp(10px, 1.5vw, 20px);
   transition: all 0.5s ease;
   outline: 1px solid var(--border);
+  text-transform: uppercase;
 }
 
-.navlist a:hover {
+.header__nav a:hover {
   color: white;
+}
+
+#menu-icon {
+  cursor: pointer;
+  display: none;
+}
+
+.h-button {
+  display: inline-block;
+  padding: 2px 13px;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-size: 1.75vw;
+  transition: all 0.5s ease;
 }/*# sourceMappingURL=index.css.map */
