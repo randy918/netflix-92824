@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "Bold";
-    src: url("../fonts/FiraSansCondensed-ExtraBold.ttf");
+    src: url("../fonts/FiraSansCondensed-Bold.ttf");
 }
 
 @font-face {
@@ -47,6 +47,22 @@ background: var(--bg-color);
 
 }
 
+//>  ████████████████████████████████████  H
+
+h3 {
+
+font-family: 'Bold';
+font-size: 3vw;
+
+}
+
+p {
+
+    font-family: 'Light';
+    font-size: 2vw;
+
+}
+
 //>  ████████████████████████████████████  A
 
 a, a:hover, a:visited, a:active {
@@ -69,7 +85,7 @@ display: grid;
 grid-template-columns: 1fr 2fr;
 grid-template-rows: 1fr 4fr;
 // gap: clamp(10px, vw, 200px);;
-max-width: 960px;
+max-width: 1280px;
 padding-left: 40px;
 padding-right: 40px;
 margin: 0 auto;
@@ -100,7 +116,7 @@ outline: 1px solid var(--border);
 }
 
 .header__nav a {
-font-size: clamp(16px, 2vw, 18px);;
+font-size: clamp(16px, 2.5vw, 36px);;
 font-family: "Bold";
 color: red;
 margin-left: clamp(10px, 1.5vw, 20px);;
@@ -137,7 +153,33 @@ font-size: 1.75vw;
 transition: all .50s ease;
 }
 
-.h-button:hover {
+//>  ████████████████████████████████████  SERVICES
+
+.services {
+
+
+
+}
+
+#services {
+
+
+
+}
+
+.services__center-text {
+
+
+
+}
+
+.services__box img {
+
+width: 6vw;
+
+}
+
+.services__content {
 
 
 

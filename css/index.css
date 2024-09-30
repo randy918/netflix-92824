@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Bold";
-  src: url("../fonts/FiraSansCondensed-ExtraBold.ttf");
+  src: url("../fonts/FiraSansCondensed-Bold.ttf");
 }
 @font-face {
   font-family: "Light";
@@ -34,6 +34,16 @@ body {
   background: var(--bg-color);
 }
 
+h3 {
+  font-family: "Bold";
+  font-size: 3vw;
+}
+
+p {
+  font-family: "Light";
+  font-size: 2vw;
+}
+
 a, a:hover, a:visited, a:active {
   color: inherit;
   text-decoration: none;
@@ -47,7 +57,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr 4fr;
-  max-width: 960px;
+  max-width: 1280px;
   padding-left: 40px;
   padding-right: 40px;
   margin: 0 auto;
@@ -75,7 +85,7 @@ header {
 }
 
 .header__nav a {
-  font-size: clamp(16px, 2vw, 18px);
+  font-size: clamp(16px, 2.5vw, 36px);
   font-family: "Bold";
   color: red;
   margin-left: clamp(10px, 1.5vw, 20px);
@@ -103,4 +113,8 @@ header {
   border-radius: 8px;
   font-size: 1.75vw;
   transition: all 0.5s ease;
+}
+
+.services__box img {
+  width: 6vw;
 }/*# sourceMappingURL=index.css.map */
