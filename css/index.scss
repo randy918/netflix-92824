@@ -48,17 +48,9 @@ body {
 
 //>  ████████████████████████████████████  H
 
-h3 {
+h3 {}
 
- 
-
-}
-
-p {
-
-  
-
-}
+p {}
 
 //>  ████████████████████████████████████  A
 
@@ -144,26 +136,40 @@ header {
 
 }
 
+.top-button {
+
+    display: flex;
+    justify-content: center;
+
+}
+
 .h-button {
 
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
     padding: 2px 13px;
     background: transparent;
     color: white;
     border: 2px solid white;
+    align-self: center;
     border-radius: 8px;
     font-size: 1.75vw;
     transition: all .50s ease;
+
 }
 
-//>  ████████████████████████████████████  SERVICES
+.h-button a {}
+
+
+
+//>  ████████████████████████████████████  SERVICES MEDIUM
 
 .services {
-// padding-left: 40px;
-// padding-right: 40px;
-max-width: 1280px;
-width: calc(100% - 80px);
-margin: 0 auto;
+    // padding-left: 40px;
+    // padding-right: 40px;
+    max-width: 1280px;
+    width: calc(100% - 80px);
+    margin: 0 auto;
 }
 
 #services {}
@@ -182,46 +188,73 @@ margin: 0 auto;
 }
 
 .services__center-text h2 {
-    font-size: var(--h2-font);
+    font-size: clamp(10px, 4vw, 32px);
+    ;
 }
 
 .services__box {
     outline: 1px solid var(--border);
     padding: 40px 40px 16px;
-    padding-left: clamp(10px, 4vw, 40px);;
-    padding-right: clamp(10px, 4vw, 40px);;
-    padding-top: clamp(10px, 4vw, 40px);;
-    padding-bottom: clamp(10px, 2vw, 40px);;
+    padding-left: clamp(10px, 4vw, 40px);
+    ;
+    padding-right: clamp(10px, 4vw, 40px);
+    ;
+    padding-top: clamp(10px, 4vw, 40px);
+    ;
+    padding-bottom: clamp(10px, 2vw, 40px);
+    ;
     background: #2d343f;
     border-radius: 14px;
     border: 1px solid transparent;
     box-shadow: 0 0 5px var(--main-color);
     transition: all .50s ease;
     cursor: pointer;
-    
+
 }
 
 .services__box img {
-    width: 6vw;
+    width: clamp(10px, 6vw, 48px);
     margin-bottom: 20px;
 }
 
 .services__box h3 {
     font-family: 'Bold';
-    font-size: 3vw;
+    font-size: clamp(10px, 3vw, 32px);
     margin-bottom: 1.5vw;
 }
 
 .services__box p {
     font-family: 'Light';
-    font-size: clamp(10px, 2.5vw, 26px);
+    font-size: clamp(10px, 2vw, 20px);
 }
 
 .services__box a {
+    display: inline-block;
+    font-size: clamp(10px, 2.5vw, 26px);
+padding: 7px 0;
+font-family: "Bold";
+color: red;
+    line-height: 1.273em;
+    transition: all .50s ease;
 
-display: inline-block;
-font-size: clamp(10px, 2.5vw, 26px);;
-line-height: 2;
+    // color: var(--text-color);
+}
+
+.services__box a:hover {
+
+color: white;
+
 }
 
 .services__content {}
+
+//_  ████████████████████████████████████  SERVICES WIDE
+
+@media (width >=868px) {
+
+    .services__content {
+        // grid-template-columns: (auto-fit, minmax(300px, auto));
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
